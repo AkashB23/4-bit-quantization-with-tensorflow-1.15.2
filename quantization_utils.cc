@@ -16,6 +16,8 @@ limitations under the License.
 
 #include <cmath>
 #include <cstdint>
+#include <iostream>
+#include <numeric>
 
 #include "absl/memory/memory.h"
 #include "third_party/eigen3/Eigen/Core"
@@ -127,7 +129,7 @@ void SymmetricPerChannelQuantization(const float* const input,
       }
     }
   }
-   my code start
+//   my code start
   for (int i=0;i < channel_dim_size;i++)
   {
     means[i] = sums[i] / channel_data[i].size();
